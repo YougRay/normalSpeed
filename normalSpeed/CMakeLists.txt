@@ -6,7 +6,7 @@ SET(CMAKE_BUILD_TYPE "Release")
 
 SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
 SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
-
+list(APPEND CMAKE_PREFIX_PATH "/usr/local/lib/python3.7/dist-packages")
 find_package(OpenCV 3 REQUIRED)
 find_package(PythonLibs 3 REQUIRED)
 find_package(pybind11 REQUIRED)
